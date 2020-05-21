@@ -38,7 +38,7 @@
  */
 /*===========================================================================*/
 // 1 - periodic, 0 - free running
-#define USE_TEENSY4_PERIODIC_ST                 0  // WHG
+#define USE_TEENSY4_PERIODIC_ST                 1  // WHG
 
 /**
  * @brief   System time counter resolution.
