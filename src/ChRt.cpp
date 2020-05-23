@@ -68,6 +68,15 @@ void chBegin(void (*mainThread)()) {
   // start of stack
   uint8_t* p = stackBase();
   // Fill stack hope compiler allows this.
+  
+  /* THIS CAUSED ISSUES WHEN INTEGRATING 
+  *  CHIBIOS into version 4.9 of the 
+  *  TEENSYDUINO PLATFORMIO SDK. 
+  *  I HAVEN'T FIGURED OUT WHY, 
+  *  BUT IT WORKS FINE WITHOUT IT
+  *  INVESTIGATE IN THE FUTURE, AND 
+  *  REPORT ANY ISSUES. 
+  */
   while (p < (uint8_t*)(&p - 4)) {
     *p++ = CH_DBG_STACK_FILL_VALUE;
   }

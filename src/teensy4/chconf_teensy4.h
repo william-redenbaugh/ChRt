@@ -38,7 +38,7 @@
  */
 /*===========================================================================*/
 // 1 - periodic, 0 - free running
-#define USE_TEENSY4_PERIODIC_ST                 1  // WHG
+#define USE_TEENSY4_PERIODIC_ST                 0  // WHG
 
 /**
  * @brief   System time counter resolution.
@@ -567,7 +567,7 @@
  * @note    The default is @p FALSE.
  */
 #if !defined(CH_DBG_FILL_THREADS)
-#define CH_DBG_FILL_THREADS                 TRUE  // was FALSE WHG
+#define CH_DBG_FILL_THREADS                 FALSE  // was FALSE WHG
 #endif
 
 /**
